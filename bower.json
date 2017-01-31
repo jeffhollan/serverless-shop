@@ -1,0 +1,13 @@
+{
+  "name": "serverless-shop",
+  "authors": [
+    "Jeff Hollan <jeffhollan@outlook.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass-official": "3.3.4",
+    "masonry": "*",
+    "font-awesome": "fontawesome#^4.7.0"
+  }
+}

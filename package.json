@@ -1,0 +1,19 @@
+{
+  "name": "serverless-shop",
+  "version": "1.0.0",
+  "description": "Serverless shop using Azure serverless tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeff Hollan",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "browser-sync": "^2.18.7",
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.13",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
