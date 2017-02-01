@@ -61,7 +61,7 @@ gulp.task('watch', ['default'], function () {
     });
     gulp.watch(config.jsPath + '/**.js', ['scripts']);
     gulp.watch(config.sassPath + '/**.scss', ['styles']);
-    gulp.watch(['*.html', '/dist/js/*.js', '/dist/css/*.css']).on("change", browserSync.reload);
+    gulp.watch(['*.html', './dist/js/*.js', './dist/css/*.css']).on("change", browserSync.reload);
 });
 
 gulp.task('default', ['bower', 'icons', 'styles', 'scripts', 'fonts']);
