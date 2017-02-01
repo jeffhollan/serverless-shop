@@ -113,13 +113,7 @@ IF EXIST "%DEPLOYMENT_TARGET%\bower.json" (
   popd
 )
 
-:: 5. Run gulp and build
-IF EXIST "%DEPLOYMENT_TARGET%\gulpfile.js" (
-  cd "$DEPLOYMENT_TARGET"
-  call :ExecuteCmd !NPM_CMD! run build
-  IF !ERRORLEVEL! NEQ 0 goto error
-  popd
-)
+
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 goto end
