@@ -9,24 +9,39 @@ $(document).ready(
       });
 
 function processForm(e) {
-      console.log(e);
-   if (e.preventDefault) e.preventDefault();
-  
-   var xhr = new XMLHttpRequest();
-//    xhr.open("POST", "http://requestb.in/1616ru71?inspect");
-//     xhr.setRequestHeader("Content-Type", "application/json; charset=utf-8");
-//     var item = {
-//         email: 'foo'
-//     };
-// //     document.getElementById("submission_receieved").classList.remove("hidden");
-//     xhr.send(JSON.stringify(item));
-    $('#myModal').modal('hide');
-   return false;
+      if (e.preventDefault) e.preventDefault();
+
+      var xhr = new XMLHttpRequest();
+      //    xhr.open("POST", "http://requestb.in/1616ru71?inspect");
+      //     xhr.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+      //     var item = {
+      //         email: 'foo'
+      //     };
+      // //     document.getElementById("submission_receieved").classList.remove("hidden");
+      //     xhr.send(JSON.stringify(item));
+      $('#myModal').modal('hide');
+      return false;
 }
 
-var form = document.getElementById('order_form');
-if (form.attachEvent) {
-    form.attachEvent("submit", processForm);
-} else {
-    form.addEventListener("submit", processForm);
+function submitComment(e) {
+      if (e.preventDefault) e.preventDefault();
+
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "http://requestb.in/1616ru71?inspect");
+      xhr.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+      var item = {
+            comment: document.getElementById('comment_form').value
+      };
+      xhr.send(JSON.stringify(item));
+      xhr.send();
+      document.getElementById('comment_form').classList.remove('hidden');
+      return false;
 }
+
+var form = document.getElementById('comment_form');
+if (form.attachEvent) {
+      form.attachEvent("submit", submitComment);
+} else {
+      form.addEventListener("submit", submitComment);
+}
+

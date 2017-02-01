@@ -10,17 +10,19 @@
 </head>
 
 <body>
+    <div id="loading" class="loading hidden">Loading&#8230;</div>
     <div class="container">
         <div id="form-main" class="col-sm-12 col-lg-12 col-md-12">
             <div class="row">
                 <div id="form-div">
-                    <form class="form" id="form1">
+                    <form class="form" id="comment_form">
 
                         <p class="text">
                             <textarea name="text" class="feedback-input" id="comment" placeholder="Comment"></textarea>
                         </p>
-                        <div>
-                            <p class="text hidden" style="font-size: x-large;"><strong>SCORE: </strong><span id="score"></span></p>
+                        <div id="results" class="hidden">
+                            <p class="text" style="font-size: x-large;" id="score_text"><strong>SCORE: </strong><span id="score"></span></p>
+                            <p class="text" style="font-size: x-large;" id="keyPhrase_text"><strong>PHRASES: </strong><span id="keyPhrases"></span></p>
 </div>
 <div class="submit">
     <input type="submit" value="SUBMIT" id="button-blue" />
@@ -28,11 +30,11 @@
     <div class="ease"></div>
     <hr></hr>
     <h2>Quick Reviews</h2>
-    <div class="btn btn-primary wrap">This flower shop is as amazing as Azure! I'm so happy.</div>
+    <div class="btn btn-primary wrap quick_comment" id="qcomment1">This flower shop is as amazing as Azure! I'm so happy.</div>
     <div class="padding"></div>
-    <div class="btn btn-primary wrap">I'm furious because I forgot to buy flowers for valentine's day.</div>
+    <div class="btn btn-primary wrap quick_comment" id="qcomment2">I'm furious because I forgot to buy flowers for valentine's day.</div>
     <div class="padding"></div>
-    <div class="btn btn-primary wrap">This is just an average review. Nothing very passionate either way.</div>
+    <div class="btn btn-primary wrap quick_comment" id="qcomment3">This is just an average review. Nothing very passionate either way.</div>
 
 
 </div>
@@ -41,4 +43,7 @@
 </div>
 </div>
 </div>
+<script src="dist/js/min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="dist/js/main.js"></script>
 </body>
