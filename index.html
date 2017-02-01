@@ -117,7 +117,7 @@
                                 <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
                             </div>
                             <div class="purchase-btn ">
-                                <div class="btn btn-primary purchase-click">Purchase</div>
+                                <div class="btn btn-primary purchase-click" data-toggle="modal" data-target="#myModal">Purchase</div>
                             </div>
                             <div class="ratings">
                                 <p class="pull-right">15 reviews</p>
@@ -127,7 +127,7 @@
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
-                                </p> 
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -142,7 +142,7 @@
                                 <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                             <div class="purchase-btn ">
-                                <div class="btn btn-primary purchase-click">Purchase</div>
+                                <div class="btn btn-primary purchase-click" data-toggle="modal" data-target="#myModal">Purchase</div>
                             </div>
                             <div class="ratings">
                                 <p class="pull-right">12 reviews</p>
@@ -167,7 +167,7 @@
                                 <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                             <div class="purchase-btn ">
-                                <div class="btn btn-primary purchase-click">Purchase</div>
+                                <div class="btn btn-primary purchase-click" data-toggle="modal" data-target="#myModal">Purchase</div>
                             </div>
                             <div class="ratings">
                                 <p class="pull-right">31 reviews</p>
@@ -192,7 +192,7 @@
                                 <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                             <div class="purchase-btn ">
-                                <div class="btn btn-primary purchase-click">Purchase</div>
+                                <div class="btn btn-primary purchase-click" data-toggle="modal" data-target="#myModal">Purchase</div>
                             </div>
                             <div class="ratings">
                                 <p class="pull-right">6 reviews</p>
@@ -217,7 +217,7 @@
                                 <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                             <div class="purchase-btn ">
-                                <div class="btn btn-primary purchase-click">Purchase</div>
+                                <div class="btn btn-primary purchase-click" data-toggle="modal" data-target="#myModal">Purchase</div>
                             </div>
                             <div class="ratings">
                                 <p class="pull-right">18 reviews</p>
@@ -242,7 +242,7 @@
                                 <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                             <div class="purchase-btn ">
-                                <div class="btn btn-primary purchase-click">Purchase</div>
+                                <div class="btn btn-primary purchase-click" data-toggle="modal" data-target="#myModal">Purchase</div>
                             </div>
                             <div class="ratings">
                                 <p class="pull-right">18 reviews</p>
@@ -265,11 +265,45 @@
         </div>
 
     </div>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div id="form-main">
+                    <div id="form-div">
+                        <form id="order_form" class="form" onsubmit="processForm()" id="form1">
+
+                            <p class="name">
+                                <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name"
+                                    id="name" />
+                            </p>
+                            <p class="address">
+                                <input name="address" type="text" class="feedback-input" placeholder="Address" id="address" />
+                            </p>
+                            <p class="email">
+                                <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+                            </p>
+
+                            <p class="creditcard">
+                                <input name="text" class="feedback-input" id="creditcard" placeholder="Credit Card #"></input>
+                            </p>
+
+
+                            <div class="submit">
+                                <input type="submit" value="Order" id="button-blue" />
+                                <div class="ease"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     <!-- /.container -->
 
     <div class="container">
 
-        <hr>
+        <!--<hr>-->
 
         <!-- Footer -->
         <footer>

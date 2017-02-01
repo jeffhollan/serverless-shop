@@ -2,6 +2,7 @@
 $font-family-base: 'Raleway', sans-serif;
 // Import bootstrap and fontawesome
 @import "_bootstrap.scss";
+@import "form.scss";
 @import "font-awesome.scss";
 
 body {
@@ -59,4 +60,12 @@ footer {
 
 .purchase-btn {
     padding-left: 10px;
+}
+
+.padding {
+    padding-top:15px;
+}
+
+.wrap {
+    white-space: normal;
 }
