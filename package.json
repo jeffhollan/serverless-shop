@@ -4,7 +4,8 @@
   "description": "Serverless shop using Azure serverless tools",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp"
   },
   "author": "Jeff Hollan",
   "license": "MIT",
