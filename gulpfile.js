@@ -16,6 +16,11 @@ gulp.task('bower', function () {
         .pipe(gulp.dest(config.bowerDir));
 });
 
+gulp.task('images', function() {
+    return gulp.src('./assets/images/*')
+    .pipe(gulp.dest('./dist/images/'));
+
+});
 gulp.task('fonts', ['bower'], function(){
     return gulp.src('./bower_components/bootstrap-sass-official/assets/fonts/bootstrap/**.*')
         .pipe(gulp.dest('./dist/fonts/bootstrap'));
@@ -64,4 +69,4 @@ gulp.task('watch', ['default'], function () {
     gulp.watch(['*.html', './dist/js/*.js', './dist/css/*.css']).on("change", browserSync.reload);
 });
 
-gulp.task('default', ['bower', 'icons', 'styles', 'scripts', 'fonts']);
+gulp.task('default', ['bower', 'icons', 'styles', 'scripts', 'fonts', 'images']);

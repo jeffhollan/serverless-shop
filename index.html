@@ -25,7 +25,7 @@
 </head>
 
 <body>
-
+    <div id="loading" class="loading hidden">Loading&#8230;</div>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -86,6 +86,9 @@
                             <div class="carousel-inner">
                                 <div class="item active">
                                     <img class="slide-image" src="/dist/images/flower_1.png" alt="">
+                                    <div id="bannerText">
+                                        Scott's flower shop
+                                    </div>
                                 </div>
                                 <div class="item">
                                     <img class="slide-image" src="http://placehold.it/800x300" alt="">
@@ -112,9 +115,9 @@
                             <img src="http://placehold.it/320x150" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$24.99</h4>
-                                <h4><a href="#">First Product</a>
+                                <h4><a href="#">Scott's Lotta Love Bouquet</a>
                                 </h4>
-                                <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+                                <p>Show the one you care that you really care about them.</p>
                             </div>
                             <div class="purchase-btn ">
                                 <div class="btn btn-primary purchase-click" data-toggle="modal" data-target="#myModal">Purchase</div>
@@ -137,9 +140,9 @@
                             <img src="http://placehold.it/320x150" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$64.99</h4>
-                                <h4><a href="#">Second Product</a>
+                                <h4><a href="#">ScottGu I Do's</a>
                                 </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>The perfect way to say those words you've always wanted to.</p>
                             </div>
                             <div class="purchase-btn ">
                                 <div class="btn btn-primary purchase-click" data-toggle="modal" data-target="#myModal">Purchase</div>
@@ -162,9 +165,9 @@
                             <img src="http://placehold.it/320x150" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$74.99</h4>
-                                <h4><a href="#">Third Product</a>
+                                <h4><a href="#">Signature Red Shirt Collection</a>
                                 </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>Who ever said you could have too much of a good thing?</p>
                             </div>
                             <div class="purchase-btn ">
                                 <div class="btn btn-primary purchase-click" data-toggle="modal" data-target="#myModal">Purchase</div>
@@ -187,9 +190,9 @@
                             <img src="http://placehold.it/320x150" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$84.99</h4>
-                                <h4><a href="#">Fourth Product</a>
+                                <h4><a href="#">Cloud Power of Love</a>
                                 </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>It's the power of love.</p>
                             </div>
                             <div class="purchase-btn ">
                                 <div class="btn btn-primary purchase-click" data-toggle="modal" data-target="#myModal">Purchase</div>
@@ -270,19 +273,18 @@
             <div class="modal-content">
                 <div id="form-main">
                     <div id="form-div">
-                        <form id="order_form" class="form" onsubmit="processForm()" id="form1">
+                        <form id="order_form" class="form">
 
                             <p class="name">
                                 <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name"
                                     id="name" />
                             </p>
-                            <p class="address">
-                                <input name="address" type="text" class="feedback-input" placeholder="Address" id="address" />
-                            </p>
                             <p class="email">
                                 <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
                             </p>
-
+                            <p class="address">
+                                <input name="address" type="text" class="feedback-input" placeholder="Address" id="address" />
+                            </p>
                             <p class="creditcard">
                                 <input name="text" class="feedback-input" id="creditcard" placeholder="Credit Card #"></input>
                             </p>
